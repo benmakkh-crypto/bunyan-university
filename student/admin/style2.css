@@ -1,0 +1,283 @@
+* {
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+section.section-padding {
+    padding: 80px 0;
+}
+
+.header-area {
+    background-color: #085195;
+    padding: 10px;
+}
+
+.header-absoulate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background: none;
+    color: #085195;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+
+.logo a i.fa.fa-home {
+    color: #085195;
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.logo span {
+    display: inline-block;
+    color: #172f46;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.main-menu ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #085195;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.main-menu ul li a:hover {
+    background: #446c91;
+    color: #fff;
+}
+
+span.social-icon a {
+    color: #085195;
+    font-size: 18px;
+    margin: 2px 5px;
+    display: inline-block;
+}
+
+span#na {
+    font-weight: 300;
+}
+
+.slider-bg-1 {
+    background-image: url(assets/img/student-bg-1.jpg);
+}
+
+.slider-bg-2 {
+    background-image: url(assets/img/student-bg-2.jpg);
+}
+
+.single-slider-item {
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    display: table;
+    padding-top: 50px;
+    background-color: #333;
+}
+
+.slider-inner {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.slide-text h2 {
+    font-size: 30px;
+    color: #fff;
+    background: #085195;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.slide-text p {
+    color: #333;
+    font-size: 23px;
+}
+
+a.boxed-btn {
+    display: inline-block;
+    background: #085195;
+    color: #fff;
+    padding: 13px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 12px;
+}
+
+.slider-content .owl-dots div {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.slider-content .owl-dots {
+    position: relative;
+    left: 0;
+    bottom: 28px;
+    margin: 0 auto;
+    width: 1110px;
+    text-align: center;
+}
+
+.slider-content .owl-dots div.active {
+    background: #085195;
+}
+
+/*============================
+Form CSS
+==============================*/
+
+.section-title h3 {
+    background: #085195;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3#et {
+    text-transform: inherit;
+}
+
+.section-title .col-md-12 {
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* General form styling */
+.form-area {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title h3 {
+    font-size: 1.5em;
+    color: #fcfcfc;
+    margin-bottom: 20px;
+}
+
+.left-side-form, .right-side-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.left-side-form h5, .right-side-form h5 {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.left-side-form p, .right-side-form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"], textarea, select {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 22px;
+
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+
+ 
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .left-side-form, .right-side-form {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+# بيانات تُنشأ على الخادم ولا تُرفع إلى GitHub
+_private/*
+!_private/.htaccess
+!_private/index.html
+assets/images/biu/
+.DS_Store

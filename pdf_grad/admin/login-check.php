@@ -1,0 +1,1 @@
+<?php if (session_status() !== PHP_SESSION_ACTIVE) @session_start(); if (empty($_SESSION["uwciv_super"]) && empty($_SESSION["uwciv_scope"]["grad"])) { header("Location: /pdf_grad/admin/index.php"); exit; }

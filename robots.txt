@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /_private/
+Disallow: /student/admin/
+Disallow: /syslog/admin/
+Disallow: /blog/admin/
+Disallow: /blgrad/admin/
+Disallow: /librarysystem/admin/
+Disallow: /pdf_grad/admin/
+Disallow: /search.php
+
+Sitemap: https://your-domain.com/sitemap.xml

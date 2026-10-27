@@ -1,0 +1,1 @@
+<?php if (session_status() !== PHP_SESSION_ACTIVE) @session_start(); if (empty($_SESSION["uwciv_super"]) && empty($_SESSION["uwciv_scope"]["library"])) { header("Location: /librarysystem/admin/index.php"); exit; }

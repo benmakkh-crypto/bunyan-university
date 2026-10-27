@@ -1,0 +1,82 @@
+# ===== روابط مختصرة لجامعة بنيان العالمية (تُولَّد من inc/links.php) =====
+# حماية الملفات الحساسة (قواعد البيانات، السجلات، ملفات الإعداد)
+<IfModule mod_headers.c>
+<Files "sw.js">
+  Header set Cache-Control "no-cache"
+</Files>
+</IfModule>
+AddType application/manifest+json .webmanifest
+<FilesMatch "\.(sql|log|lock|md|ini|bak|zip)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(log\.txt|composer\.json|composer\.lock|htaccess\.uwciv|01 LOGIN DETAILS.*)$">
+  Require all denied
+</FilesMatch>
+RewriteEngine On
+RewriteBase /
+# توحيد العنوان بدون www
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://your-domain.com/$1 [R=301,L]
+DirectoryIndex index.php index.html default.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^app/?$ app.php [L,QSA]
+RewriteRule ^links/?$ links.php [L]
+RewriteRule ^admin/settings/?$ /admin/settings.php [R=302,L]
+RewriteRule ^portal/?$ elctro.php [L,QSA]
+RewriteRule ^login/?$ /syslog/index.php [R=302,L]
+RewriteRule ^register/?$ /student/index.php [R=302,L]
+RewriteRule ^exam/?$ /onlineexam/index.php [R=302,L]
+RewriteRule ^certificate/?$ /de/des.php [R=302,L]
+RewriteRule ^courses/?$ /courses/courses.php [R=302,L]
+RewriteRule ^library/?$ /librarysystem/index.php [R=302,L]
+RewriteRule ^theses/?$ /pdf_grad/index.php [R=302,L]
+RewriteRule ^support/?$ form2.php [L,QSA]
+RewriteRule ^complaint/?$ form1.php [L,QSA]
+RewriteRule ^calendar/?$ calendar.php [L,QSA]
+RewriteRule ^faq/?$ ask.php [L,QSA]
+RewriteRule ^search/?$ srchweb.php [L,QSA]
+RewriteRule ^colleges/?$ colleges.php [L,QSA]
+RewriteRule ^college/([a-z-]+)/?$ college.php?c=$1 [L,QSA]
+RewriteRule ^diploma/?$ depl.php [L,QSA]
+RewriteRule ^bachelor/?$ depm.php [L,QSA]
+RewriteRule ^master/?$ depmst.php [L,QSA]
+RewriteRule ^phd/?$ depdec.php [L,QSA]
+RewriteRule ^lectures/?$ depmlact.php [L,QSA]
+RewriteRule ^lectures-master/?$ depmstlact.php [L,QSA]
+RewriteRule ^lectures-phd/?$ declact.php [L,QSA]
+RewriteRule ^faculty/?$ /teacher/index.php [R=302,L]
+RewriteRule ^platform/?$ education.php [L,QSA]
+RewriteRule ^research/?$ research.php [L,QSA]
+RewriteRule ^about/?$ about.php [L,QSA]
+RewriteRule ^study-system/?$ edusys.php [L,QSA]
+RewriteRule ^campus/?$ place.php [L,QSA]
+RewriteRule ^agreements/?$ countries.php [L,QSA]
+RewriteRule ^structure/?$ structure.php [L,QSA]
+RewriteRule ^strategy/?$ stratj.php [L,QSA]
+RewriteRule ^council/?$ info.php?p=council [L,QSA]
+RewriteRule ^president/?$ info.php?p=president [L,QSA]
+RewriteRule ^deanships/?$ info.php?p=deanships [L,QSA]
+RewriteRule ^regulations/?$ regulations.php [L,QSA]
+RewriteRule ^accreditation/?$ info.php?p=accred [L,QSA]
+RewriteRule ^journal/?$ journal.php [L,QSA]
+RewriteRule ^branches/?$ info.php?p=branches [L,QSA]
+RewriteRule ^jobs/?$ jobs.php [L,QSA]
+RewriteRule ^alumni/?$ grad.php [L,QSA]
+RewriteRule ^news/?$ news.php [L,QSA]
+RewriteRule ^events/?$ events.php [L,QSA]
+RewriteRule ^gallery/?$ images.php [L,QSA]
+RewriteRule ^graduation/?$ party.php [L,QSA]
+RewriteRule ^contact/?$ contact.php [L,QSA]
+RewriteRule ^admin/jobs/?$ /admin/jobs.php [R=302,L]
+RewriteRule ^admin/regs/?$ /admin/regs.php [R=302,L]
+RewriteRule ^admin/members/?$ /admin/members.php [R=302,L]
+RewriteRule ^members/?$ /teacher/index.php [R=302,L]
+RewriteRule ^admin/applications/?$ /student/admin/list.php [R=302,L]
+RewriteRule ^apply/?$ /student/index.php [R=302,L]
+RewriteRule ^admin/news/?$ /blog/admin/index.php [R=302,L]
+RewriteRule ^admin/events/?$ /blgrad/admin/index.php [R=302,L]
+RewriteRule ^admin/accounts/?$ /syslog/admin/index.php [R=302,L]
+RewriteRule ^admin/library/?$ /librarysystem/admin/index.php [R=302,L]
+RewriteRule ^admin/theses/?$ /pdf_grad/admin/index.php [R=302,L]
+RewriteRule ^admin/exam/?$ /onlineexam/index.php [R=302,L]
+# ===== نهاية الروابط المختصرة =====

@@ -1,0 +1,137 @@
+/* القائمة العملاقة — ثلاثة مستويات */
+.u-nav{position:relative;z-index:60}
+.u-item.u-mg{position:static}
+.u-mega{position:absolute;top:100%;left:0;right:0;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:70;padding:0 0 18px;pointer-events:none}
+.u-item.u-mg:hover>.u-mega,.u-item.u-mg.is-open>.u-mega,.u-item.u-mg:focus-within>.u-mega{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.u-mega:before{content:"";position:absolute;inset:-14px 0 auto;height:14px}
+.u-mega-in{display:grid;grid-template-columns:290px minmax(0,1fr) 230px;gap:0;background:#fff;border-radius:0 0 26px 26px;box-shadow:0 40px 70px -30px rgba(6,33,15,.5),0 0 0 1px #e6eee8;overflow:hidden;max-height:calc(100vh - 170px)}
+.u-mega-tabs{background:linear-gradient(180deg,#f4f9f6,#eaf3ee);padding:18px 12px;overflow-y:auto;border-inline-end:1px solid #e3ece6}
+.u-mega-head{padding:2px 10px 14px;margin-bottom:8px;border-bottom:1px dashed #cfe0d5}
+.u-mega-head b{display:block;font-size:19px;font-weight:900;color:var(--ink)}
+.u-mega-head span{display:block;color:var(--muted);font-size:13px;line-height:1.7;margin-top:2px}
+.u-mega-tab{width:100%;display:flex;gap:12px;align-items:center;text-align:start;border:0;background:none;border-radius:14px;padding:10px;cursor:pointer;font-family:inherit;transition:background .18s,box-shadow .18s;color:var(--ink-3)}
+.u-mega-tab>i:first-child{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#fff;color:var(--teal);font-size:15px;flex:none;box-shadow:0 4px 12px -8px rgba(6,33,15,.5);transition:.18s}
+.u-mega-tab span{flex:1;min-width:0}
+.u-mega-tab b{display:block;font-size:14.5px;font-weight:800;color:var(--ink)}
+.u-mega-tab small{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.u-mega-tab .u-mt-ch{font-size:10px;color:#9fb8a8;transition:.18s}
+.u-mega-tab:hover,.u-mega-tab.on{background:#fff;box-shadow:0 10px 24px -16px rgba(6,33,15,.45)}
+.u-mega-tab.on>i:first-child{background:linear-gradient(145deg,#2fa060,#11432a);color:#fff}
+.u-mega-tab.on .u-mt-ch{color:var(--gold-2,#b98f25);transform:translateX(-3px)}
+[dir="ltr"] .u-mega-tab .u-mt-ch{transform:scaleX(-1)}
+.u-mega-panes{padding:20px 22px;overflow-y:auto;min-height:300px}
+.u-mega-pane{display:none}.u-mega-pane.on{display:block;animation:uMgIn .25s ease}
+@keyframes uMgIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.u-mega-ph{display:flex;gap:10px;align-items:baseline;margin:0 4px 14px;flex-wrap:wrap}
+.u-mega-ph i{color:var(--teal)}.u-mega-ph b{font-size:18px;font-weight:900;color:var(--ink)}.u-mega-ph small{color:var(--muted);font-size:13px}
+.u-mega-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.u-mega-link{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:16px;text-decoration:none!important;color:var(--text)!important;transition:background .18s,transform .18s;border:1px solid transparent}
+.u-mega-link>i{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--cyan-soft,#e6f4ec);color:var(--teal);font-size:16px;flex:none;transition:.18s}
+.u-mega-link b{display:block;font-size:14.5px;font-weight:800;color:var(--ink);line-height:1.5}
+.u-mega-link small{display:block;color:var(--muted);font-size:12.5px;line-height:1.6;margin-top:1px}
+.u-mega-link:hover{background:#f6faf7;border-color:#e3ece6;transform:translateY(-2px)}
+.u-mega-link:hover>i{background:linear-gradient(145deg,#2fa060,#11432a);color:#fff;transform:rotate(-6deg)}
+.u-mega-cta{margin:16px 16px 16px 0;border-radius:20px;padding:22px 18px;display:flex;flex-direction:column;gap:8px;text-decoration:none!important;color:#fff!important;background:radial-gradient(240px 180px at 100% 0,rgba(127,224,166,.35),transparent 60%),linear-gradient(160deg,#0b3119,#06210f);position:relative;overflow:hidden}
+[dir="ltr"] .u-mega-cta{margin:16px 0 16px 16px}
+.u-mega-cta:after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 4l7 19 19 7-19 7-7 19-7-19-19-7 19-7z' fill='none' stroke='%23fff' stroke-opacity='.07'/%3E%3C/svg%3E")}
+.u-mega-cta>*{position:relative;z-index:1}
+.u-mega-cta>i{width:50px;height:50px;border-radius:16px;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#e8c46a;font-size:21px}
+.u-mega-cta b{font-size:18px;font-weight:900;color:#fff}
+.u-mega-cta span{color:#cfe6d7;font-size:13.5px;line-height:1.8}
+.u-mega-cta em{margin-top:auto;font-style:normal;font-weight:900;background:#fff;color:var(--ink)!important;border-radius:12px;padding:10px 12px;text-align:center;transition:.2s}
+.u-mega-cta:hover em{background:#e8c46a}
+.u-mega-cta em i{font-size:12px;margin-inline-start:4px}
+@media(max-width:1300px){.u-mega-in{grid-template-columns:260px minmax(0,1fr)}.u-mega-cta{display:none}}
+
+/* الجوال: أكورديون بثلاثة مستويات */
+@media(max-width:1099px){
+  .u-nav{position:static}
+  .u-mega{position:static;opacity:1;visibility:visible;transform:none;display:none;padding:0;pointer-events:auto}
+  .u-mega:before{display:none}
+  .u-item.u-mg.is-open>.u-mega{display:block}
+  .u-mega-in{display:block;border-radius:16px;box-shadow:none;border:1px solid #e3ece6;margin:6px 0 12px;max-height:none;background:var(--mist)}
+  .u-mega-tabs{background:none;border:0;padding:8px;overflow:visible}
+  .u-mega-head{display:none}
+  .u-mega-panes{display:none}
+  .u-mega-tab{background:#fff;margin-bottom:6px;box-shadow:none;border:1px solid #e6eee8}
+  .u-mega-tab .u-mt-ch{transform:rotate(-90deg)}
+  .u-mega-tab.op .u-mt-ch{transform:rotate(90deg)}
+  .u-mega-tab.on:not(.op)>i:first-child{background:#fff;color:var(--teal)}
+  .u-mega-acc{display:none;padding:2px 4px 10px}
+  .u-mega-tab.op+.u-mega-acc{display:block;animation:uMgIn .2s ease}
+  .u-mega-acc .u-mega-grid{grid-template-columns:minmax(0,1fr);gap:4px}
+  .u-mega-acc .u-mega-link{background:#fff;padding:10px}
+  .u-mega-acc .u-mega-link>i{width:34px;height:34px;font-size:14px}
+}
+@media(min-width:1100px){.u-mega-acc{display:none!important}}
+
+/* الزخرفة الإسلامية */
+.u-footer{position:relative;isolation:isolate;overflow:hidden}
+.u-footer:before{content:"";position:absolute;inset:0;z-index:-1;background:url(/assets/images/pattern-islamic.svg) 0 0/96px;opacity:.16;-webkit-mask-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.55) 60%,rgba(0,0,0,.25) 100%);mask-image:linear-gradient(180deg,#000 0%,rgba(0,0,0,.55) 60%,rgba(0,0,0,.25) 100%)}
+.u-footer:after{content:"";position:absolute;top:0;left:0;right:0;height:14px;z-index:-1;background:url(/assets/images/pattern-islamic.svg) 0 0/28px,linear-gradient(90deg,transparent,rgba(227,196,106,.35),transparent);opacity:.9}
+.u-page{background-image:url(/assets/images/pattern-islamic-faint.svg);background-size:96px}
+.u-page-hero{position:relative}
+.u-page-hero:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:url(/assets/images/pattern-islamic.svg) 0 0/96px;opacity:.07}
+.u-mega-in.no-cta{grid-template-columns:290px minmax(0,1fr)}
+@media(max-width:1300px){.u-mega-in.no-cta{grid-template-columns:260px minmax(0,1fr)}}
+
+/* زخارف الصفحة الرئيسية */
+.h-stats,.h-story,.h-stages{position:relative;isolation:isolate}
+.h-story,.h-stages{overflow-x:clip}
+.h-story{background:url(/assets/images/pattern-islamic-faint.svg) 0 0/96px}
+.h-story:before{content:"";position:absolute;z-index:-1;width:560px;height:560px;left:-180px;top:40px;background:url(/assets/images/rosette-gold.svg) center/contain no-repeat;opacity:.13;animation:uRose 140s linear infinite;pointer-events:none}
+.h-story:after{content:"";position:absolute;z-index:-1;width:360px;height:360px;right:-140px;bottom:-60px;background:url(/assets/images/rosette-green.svg) center/contain no-repeat;opacity:.08;animation:uRose 180s linear infinite reverse;pointer-events:none}
+.h-stages{background:linear-gradient(180deg,transparent,rgba(31,122,69,.04)),url(/assets/images/pattern-islamic-faint.svg) 0 0/96px}
+.h-stages:before{content:"";position:absolute;z-index:-1;left:50%;top:-40px;width:420px;height:420px;margin-left:-210px;background:url(/assets/images/rosette-gold.svg) center/contain no-repeat;opacity:.07;pointer-events:none}
+.h-stages:after{content:"";position:absolute;left:0;right:0;bottom:0;height:16px;background:url(/assets/images/pattern-islamic.svg) 0 0/32px,linear-gradient(90deg,transparent,rgba(201,150,42,.5),transparent);opacity:.8;pointer-events:none}
+.h-news{position:relative;isolation:isolate}
+.h-news .u-bgshade:after{content:"";position:absolute;inset:0;background:url(/assets/images/pattern-islamic.svg) 0 0/96px;opacity:.14}
+.h-news:before{content:"";position:absolute;z-index:1;width:620px;height:620px;right:-220px;top:-200px;background:url(/assets/images/rosette-gold.svg) center/contain no-repeat;opacity:.16;animation:uRose 160s linear infinite;pointer-events:none}
+.h-news:after{content:"";position:absolute;z-index:1;width:420px;height:420px;left:-160px;bottom:-160px;background:url(/assets/images/rosette-gold.svg) center/contain no-repeat;opacity:.12;animation:uRose 200s linear infinite reverse;pointer-events:none}
+@keyframes uRose{to{transform:rotate(360deg)}}
+@media(max-width:760px){.h-story:before,.h-news:before{width:360px;height:360px}.h-story:after,.h-news:after,.h-stages:before{display:none}}
+@media(prefers-reduced-motion:reduce){.h-story:before,.h-story:after,.h-news:before,.h-news:after{animation:none}}
+
+/* النقشة الإسلامية في كل الخلفيات */
+html body{background:var(--mist) url(/assets/images/pattern-islamic-faint.svg) 0 0/96px!important}
+.u-top{position:relative;isolation:isolate}
+.u-top:before{content:"";position:absolute;inset:0;z-index:-1;background:url(/assets/images/pattern-islamic.svg) 0 0/72px;opacity:.10;pointer-events:none}
+.u-util{background:#041509 url(/assets/images/pattern-islamic.svg) 0 0/40px!important;background-blend-mode:soft-light}
+.u-hero .u-bgshade:after{content:"";position:absolute;inset:0;background:url(/assets/images/pattern-islamic.svg) 0 0/96px;opacity:.12}
+.u-hero:before{content:"";position:absolute;z-index:-1;width:640px;height:640px;left:-240px;bottom:-260px;background:url(/assets/images/rosette-gold.svg) center/contain no-repeat;opacity:.14;animation:uRose 200s linear infinite;pointer-events:none}
+.h-stats>*{position:relative}
+.u-mega-in{background:#fff url(/assets/images/pattern-islamic-faint.svg) 0 0/96px}
+.u-mega-tabs{background:linear-gradient(180deg,rgba(244,249,246,.94),rgba(234,243,238,.94)),url(/assets/images/pattern-islamic-light.svg) 0 0/72px}
+.ox-intro:before{background-image:url(/assets/images/pattern-islamic.svg)!important;background-size:72px!important;opacity:.14}
+.ox-wel,.gr-intro{position:relative;isolation:isolate;overflow:hidden}
+.ox-wel:before,.gr-intro:before{content:"";position:absolute;inset:0;z-index:-1;background:url(/assets/images/pattern-islamic.svg) 0 0/72px;opacity:.13}
+.jr-cover:after{background-image:url(/assets/images/pattern-islamic.svg)!important;background-size:48px!important;opacity:.18}
+.u-page-hero:after{opacity:.11}
+.lb-hero,.hd-intro,.jb-track-in,.rs-hero{position:relative;isolation:isolate}
+.lb-hero:before,.hd-intro:before,.jb-track-in:before,.rs-hero:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;background:url(/assets/images/pattern-islamic.svg) 0 0/72px;opacity:.13;pointer-events:none}
+
+/* شريط الأخبار المتحرك */
+.u-ticker{background:linear-gradient(90deg,#fdf7e7,#fff 30%,#fff 70%,#fdf7e7);border-bottom:1px solid #eadfbe;position:relative;z-index:50;overflow:hidden}
+.u-tk-row{display:flex;align-items:center;gap:12px;height:46px}
+.u-tk-l{flex:none;display:inline-flex;gap:8px;align-items:center;height:32px;padding:0 14px;border-radius:30px;font-weight:900;font-size:13.5px;color:#fff;background:linear-gradient(135deg,#9b1f45,#c0392b);box-shadow:0 8px 16px -10px rgba(155,31,69,.8);position:relative}
+.u-tk-l i{animation:uTkRing 2.2s ease-in-out infinite}
+@keyframes uTkRing{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(-14deg)}20%,40%{transform:rotate(14deg)}}
+.u-tk-v{flex:1;min-width:0;overflow:hidden;display:flex;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.u-tk-t{display:flex;align-items:center;flex:none;white-space:nowrap;animation:uTk var(--d,60s) linear infinite;padding-inline-start:20px}
+[dir="rtl"] .u-tk-t,.u-tk-t{animation-name:uTkR}
+[dir="ltr"] .u-tk-t{animation-name:uTkL}
+@keyframes uTkR{from{transform:translateX(0)}to{transform:translateX(100%)}}
+@keyframes uTkL{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+.u-ticker:hover .u-tk-t,.u-ticker.paused .u-tk-t{animation-play-state:paused}
+.u-tk-i{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2,#11432a)!important;font-weight:700;font-size:14.5px;text-decoration:none!important;padding:4px 6px;border-radius:8px;transition:.2s}
+.u-tk-i:hover{color:var(--teal)!important;background:rgba(31,122,69,.06)}
+.u-tk-i>i{color:#b98f25}
+.u-tk-i em{font-style:normal;background:#c0392b;color:#fff;border-radius:6px;padding:0 7px;font-size:11.5px;font-weight:900;animation:uTkHot 1.6s infinite}
+@keyframes uTkHot{50%{opacity:.55}}
+.u-tk-sep{color:#c9962a;margin:0 16px;font-size:14px;font-weight:400}
+.u-tk-p{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid #eadfbe;background:#fff;color:#8a6d1f;cursor:pointer;font-size:11px}
+@media(max-width:600px){.u-tk-row{height:42px;gap:8px}.u-tk-l{padding:0 10px;font-size:12px}.u-tk-l{font-size:0;gap:0;width:32px;justify-content:center}.u-tk-l i{font-size:13px}.u-tk-i{font-size:13.5px}.u-tk-p{display:none}}
+@media(prefers-reduced-motion:reduce){.u-tk-t{animation-duration:400s}}
+.u-ticker.js .u-tk-t{animation:none!important;will-change:transform}
+.u-tk-v{direction:rtl}
+[dir="ltr"] .u-tk-v{direction:ltr}
