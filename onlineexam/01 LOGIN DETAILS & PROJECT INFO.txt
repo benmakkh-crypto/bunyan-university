@@ -1,0 +1,13 @@
+
+
+
+**Student Login Details**
+
+Email   : ma5@gmail.com 
+Password: ma5123456
+
+
+**Admin Login Details**
+
+Email    : d@d.com@gmail.com
+Password : asd

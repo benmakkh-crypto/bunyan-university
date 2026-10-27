@@ -1,0 +1,36 @@
+.w-450 {
+	width: 450px;
+}
+.vh-100 {
+	min-height: 100vh;
+}
+
+
+  .img {
+	width:340px;
+	height: 300px;
+margin: 100px;
+	
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5389f4;
+    border-color: #5389f4;
+}
+.btn-primary:hover {
+  
+  color: #fff;
+    background-color: #5389f4;
+}
+
+
+.link-secondary{
+color: #5389f4;
+}
+
+.link-secondary:hover{
+    color: #5389f4;
+    }
+
+    

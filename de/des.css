@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.certificate {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+ 
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header1.tit{
+    text-align: center;
+}
+.logo img {
+    width: 160px;
+    height: 130px;
+}
+
+.imag img {
+    width: 190px;
+    height: 300px;
+}
+
+
+.university-info h1,
+.university-info h3 {
+    text-align: right;
+    margin: 0;
+}
+
+.certificate-body {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certificate-body .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.certificate-body p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+
+.content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.link a{
+    text-decoration: none;
+    color: #044218;
+}
+.link a:hover{
+  
+    color: #088d32;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .certificate {
+        padding: 15px;
+    }
+    .header h1 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}

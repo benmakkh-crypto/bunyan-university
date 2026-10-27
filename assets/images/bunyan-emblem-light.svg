@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8c46a"/><stop offset="1" stop-color="#b98f25"/></linearGradient></defs>
+<polygon points="200.0,4.0 260.0,55.1 338.6,61.4 344.9,140.0 396.0,200.0 344.9,260.0 338.6,338.6 260.0,344.9 200.0,396.0 140.0,344.9 61.4,338.6 55.1,260.0 4.0,200.0 55.1,140.0 61.4,61.4 140.0,55.1" fill="url(#g)"/>
+<polygon points="200.0,16.0 256.3,64.0 330.1,69.9 336.0,143.7 384.0,200.0 336.0,256.3 330.1,330.1 256.3,336.0 200.0,384.0 143.7,336.0 69.9,330.1 64.0,256.3 16.0,200.0 64.0,143.7 69.9,69.9 143.7,64.0" fill="#ffffff"/>
+<rect x="82" y="82" width="236" height="236" fill="none" stroke="url(#g)" stroke-width="3"/>
+<rect x="82" y="82" width="236" height="236" fill="none" stroke="url(#g)" stroke-width="3" transform="rotate(45 200 200)"/>
+<circle cx="200" cy="200" r="112" fill="#0b3119"/>
+<circle cx="200" cy="200" r="104" fill="none" stroke="url(#g)" stroke-width="2.5"/>
+<g fill="#e8c46a">
+ <path d="M186,122 q14,-18 28,0 z"/>
+ <rect x="198.5" y="104" width="3" height="16"/>
+ <path d="M160,160 a40,36 0 0 1 80,0 z"/>
+ <rect x="142" y="160" width="116" height="9" rx="2"/>
+ <rect x="124" y="248" width="152" height="10" rx="2"/>
+ <rect x="114" y="260" width="172" height="9" rx="2"/>
+</g>
+<g fill="none" stroke="#e8c46a" stroke-width="9" stroke-linecap="square">
+ <path d="M134,248 v-46 a14,14 0 0 1 28,0 v46"/>
+ <path d="M184,248 v-50 a16,16 0 0 1 32,0 v50"/>
+ <path d="M238,248 v-46 a14,14 0 0 1 28,0 v46"/>
+</g>
+<rect x="142" y="169" width="116" height="12" fill="#e8c46a" opacity=".55"/>
+</svg>
