@@ -82,7 +82,7 @@ function uwciv_staff_roles()
 {
     return [
         'president'  => ['رئيس الجامعة', 'fas fa-user-tie', 'القيادة التنفيذية والأكاديمية — اطلاع وإدارة شاملة للمحتوى والطلبات', ['applications', 'jobs', 'tickets', 'news', 'events', 'members', 'regs', 'calendar', 'colleges', 'library', 'grad', 'exams', 'menu', 'ticker', 'pages']],
-        'vp_acad'    => ['نائب الرئيس للشؤون الأكاديمية', 'fas fa-graduation-cap', 'الإشراف على الكليات والبرامج والاختبارات والتقويم', ['applications', 'regs', 'calendar', 'colleges', 'exams', 'library', 'grad', 'members']],
+        'vp_acad'    => ['نائب الرئيس للشؤون الأكاديمية', 'fas fa-graduation-cap', 'الإشراف على الكليات والبرامج والاختبارات والتقويم', ['applications', 'regs', 'calendar', 'colleges', 'curriculum', 'exams', 'library', 'grad', 'members']],
         'vp_research'=> ['نائب الرئيس للبحث والتطوير', 'fas fa-lightbulb', 'البحث العلمي والمكتبة والمجلة', ['library', 'news', 'regs']],
         'dean_digital'=>['عميد التعلم الرقمي', 'fas fa-laptop-code', 'المنصة والامتحانات الإلكترونية وحسابات الطلاب والدعم', ['exams', 'accounts', 'tickets', 'library']],
         'gm_admin'   => ['المدير العام للشؤون الإدارية والمالية', 'fas fa-building', 'التوظيف والموارد والشكاوى الإدارية', ['jobs', 'members', 'tickets', 'applications']],

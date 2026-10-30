@@ -15,6 +15,10 @@ $urls = [
   ['/librarysystem/index.php', '0.6', 'weekly'], ['/pdf_grad/index.php', '0.5', 'monthly'], ['/onlineexam/index.php', '0.4', 'monthly'], ['/de/des.php', '0.4', 'monthly'],
 ];
 foreach (array_keys($GLOBALS['UWCIV_COLLEGES']) as $slug) $urls[] = ['/college/' . $slug, '0.8', 'monthly'];
+require_once __DIR__ . '/inc/curriculum.php';
+$urls[] = ['/plans', '0.8', 'monthly'];
+foreach (array_keys(cur_doc()['programs']) as $slug) $urls[] = ['/plan/' . $slug, '0.7', 'monthly'];
+foreach (array_keys(cur_doc()['courses']) as $code) $urls[] = ['/course/' . $code, '0.4', 'monthly'];
 if (isset($UWCIV_PAGES) && is_array($UWCIV_PAGES)) foreach (array_keys($UWCIV_PAGES) as $k) if (!in_array($k, ['regs', 'jobs', 'journal'], true)) $urls[] = ['/info.php?p=' . $k, '0.5', 'monthly'];
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n" . '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 foreach ($urls as $u) {

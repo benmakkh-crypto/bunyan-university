@@ -79,6 +79,11 @@ uwciv_open($c['n'], t('colleges_m'), $c['tag']);
 </div>
 
 <div class="c-pane" id="p-progs">
+  <?php require_once __DIR__ . '/inc/curriculum.php'; $__cp = array_filter(cur_doc()['programs'], function ($p) use ($slug) { return $p['college'] === $slug; }); if ($__cp): ?>
+  <div class="c-box" style="margin-bottom:16px"><h3><i class="fas fa-project-diagram"></i> الخطط الدراسية والكتب</h3>
+    <div class="c-links" style="margin-top:8px"><?php foreach ($__cp as $__s => $__p): $__st = cur_program_stats($__p); ?><a href="/plan.php?p=<?= cur_h($__s) ?>" style="--sc:<?= $UWCIV_STAGES[$__p['stage']][1] ?? '#1f7a45' ?>"><i class="fas fa-layer-group"></i><span><?= cur_h($__p['n']) ?><small><?= count($__p['levels']) ?> مستويات · <?= $__st['total'] ?> <?= $__p['unit'] === 'cr' ? 'ساعة معتمدة' : 'ساعة اتصال' ?> · <?= $__st['courses'] ?> مقررًا</small></span></a><?php endforeach; ?></div>
+  </div>
+  <?php endif; ?>
   <table class="c-table">
     <thead><tr><th>المرحلة</th><th>المدة</th><th>متطلبات التخرج</th><th>شروط القبول</th></tr></thead>
     <tbody>

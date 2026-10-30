@@ -65,7 +65,12 @@ color: #fff;
 <body>
 
 <?php include "header1.php";
-?>    
+?>
+<?php require_once __DIR__ . '/inc/curriculum.php'; $__pl = array_filter(cur_doc()['programs'], function ($p) { return $p['stage'] === 'bac'; }); ?>
+<div style="max-width:1200px;margin:110px auto 0;padding:0 16px"><div style="background:#fff;border-radius:18px;box-shadow:0 6px 16px rgba(6,33,15,.08);padding:16px 18px;border-top:5px solid #1f7a45">
+  <b style="font-size:17px;color:#06210f"><i class="fas fa-project-diagram" style="color:#1f7a45"></i> الخطط الدراسية لهذه المرحلة — المستويات ورموز المقررات والساعات والكتب</b>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><?php foreach ($__pl as $__s => $__p): ?><a href="/plan.php?p=<?= cur_h($__s) ?>" style="background:#f3f7f4;border-radius:12px;padding:8px 12px;font-weight:700;color:#114326;text-decoration:none"><?= cur_h($__p['n']) ?></a><?php endforeach; ?><a href="/plans.php" style="background:#1f7a45;color:#fff;border-radius:12px;padding:8px 12px;font-weight:700;text-decoration:none">كل الخطط</a></div>
+</div></div>    
  
 
      

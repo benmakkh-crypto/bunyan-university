@@ -103,6 +103,7 @@ $UWCIV_T = [
  'party'      => ['حفلات التخرج', 'Graduation Ceremonies', 'সমাবর্তন অনুষ্ঠান', 'تقاریبِ تقسیمِ اسناد'],
  'faq'        => ['الأسئلة الشائعة', 'FAQ', 'সাধারণ প্রশ্ন', 'عام سوالات'],
  'login'      => ['تسجيل الدخول', 'Sign In', 'লগইন', 'لاگ ان'],
+ 'study_plans' => ['الخطط الدراسية والكتب', 'Study Plans & Books', 'অধ্যয়ন পরিকল্পনা ও বই', 'تعلیمی منصوبے اور کتب'],
  'col_guide'  => ['دليل الكليات', 'Colleges Guide', 'কলেজ নির্দেশিকা', 'کالجز گائیڈ'],
  'colleges_m' => ['الكليات', 'Colleges', 'কলেজসমূহ', 'کالجز'],
  'library_m'  => ['المكتبة الإلكترونية', 'E-Library', 'ই-লাইব্রেরি', 'ای لائبریری'],
@@ -186,7 +187,7 @@ function uwciv_menu()
             ['finance', $i('finance')], ['adminaff', $i('adminaff')],
         ]],
         ['colleges_m', '/colleges.php', [
-            ['col_guide', '/colleges.php'], ['diploma', '/depl.php'], ['bachelor', '/depm.php'], ['master', '/depmst.php'], ['phd', '/depdec.php'],
+            ['col_guide', '/colleges.php'], ['study_plans', '/plans.php'], ['diploma', '/depl.php'], ['bachelor', '/depm.php'], ['master', '/depmst.php'], ['phd', '/depdec.php'],
             ['lectures', '/depmlact.php', [
                 ['lec_bac', '/depmlact.php'], ['lec_mas', '/depmstlact.php'], ['lec_phd', '/declact.php'],
             ]],

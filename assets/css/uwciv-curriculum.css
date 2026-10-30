@@ -1,0 +1,118 @@
+/* الخطط الدراسية — جامعة بنيان العالمية */
+.cu-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 22px}
+.cu-fact{background:#fff;border-radius:16px;padding:14px 16px;box-shadow:var(--sh-1);display:flex;gap:12px;align-items:center}
+.cu-fact i{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--cc,#1f7a45) 12%,#fff);color:var(--cc,#1f7a45);font-size:17px;flex:0 0 40px}
+.cu-fact b{display:block;font-size:20px;font-weight:900;color:var(--ink);line-height:1.2}
+.cu-fact span{font-size:12.5px;color:var(--muted)}
+.cu-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:#fff;border-radius:16px;padding:10px 12px;box-shadow:var(--sh-1);margin:0 0 18px;position:sticky;top:70px;z-index:6}
+.cu-bar .sp{flex:1}
+.cu-seg{display:inline-flex;background:var(--mist);border-radius:12px;padding:4px;gap:4px}
+.cu-seg button{border:0;background:transparent;border-radius:9px;padding:8px 14px;font-weight:800;font-size:13.5px;color:var(--ink-3);cursor:pointer}
+.cu-seg button.on{background:var(--cc,#1f7a45);color:#fff}
+.cu-in{display:flex;align-items:center;gap:8px;background:var(--mist);border-radius:12px;padding:0 12px;min-width:220px;flex:1 1 220px}
+.cu-in input{border:0;background:transparent;height:40px;outline:none;width:100%;font-size:14px}
+.cu-btn{display:inline-flex;align-items:center;gap:7px;border:0;border-radius:11px;padding:9px 14px;font-weight:800;font-size:13.5px;cursor:pointer;background:var(--mist);color:var(--ink-3);text-decoration:none!important}
+.cu-btn.p{background:var(--cc,#1f7a45);color:#fff!important}
+.cu-btn.d{background:#fbe9ee;color:#9b1f45!important}
+.cu-btn:hover{filter:brightness(.96)}
+.cu-dist{display:flex;height:14px;border-radius:10px;overflow:hidden;margin:6px 0 8px;background:#eef3ef}
+.cu-dist span{display:block;height:100%}
+.cu-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted)}
+.cu-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:5px;vertical-align:middle}
+.cu-levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:18px}
+.cu-lv{background:#fff;border-radius:20px;box-shadow:var(--sh-1);overflow:hidden;display:flex;flex-direction:column}
+.cu-lvh{display:flex;align-items:center;gap:10px;padding:12px 16px;background:linear-gradient(135deg,var(--cc,#1f7a45),color-mix(in srgb,var(--cc,#1f7a45) 60%,#000));color:#fff}
+.cu-lvh b{font-size:16px;font-weight:900}
+.cu-lvh .h{margin-inline-start:auto;background:rgba(255,255,255,.18);border-radius:20px;padding:3px 12px;font-size:13px;font-weight:800}
+.cu-t{width:100%;border-collapse:collapse;font-size:14px}
+.cu-t th{background:#f6faf7;color:var(--muted);font-size:12px;font-weight:800;padding:8px 10px;text-align:start;white-space:nowrap}
+.cu-t td{padding:9px 10px;border-top:1px solid #eef3ef;vertical-align:middle}
+.cu-t tr:hover td{background:#fbfdfb}
+.cu-t .cd{font-family:ui-monospace,Consolas,monospace;font-weight:800;color:var(--ink-3);white-space:nowrap;direction:ltr;text-align:left}
+.cu-t .nm a{color:var(--ink);font-weight:700;text-decoration:none}
+.cu-t .nm a:hover{color:var(--cc,#1f7a45)}
+.cu-t .nm small{display:block;color:var(--muted);font-size:11.5px;direction:ltr;text-align:right}
+.cu-t .hr{text-align:center;font-weight:900;color:var(--ink);white-space:nowrap}
+.cu-t .pr a{display:inline-block;font-family:ui-monospace,Consolas,monospace;font-size:11.5px;font-weight:800;background:var(--mist);border-radius:7px;padding:2px 6px;margin:1px;color:var(--ink-3);text-decoration:none;direction:ltr}
+.cu-chip{display:inline-block;font-size:11px;font-weight:800;color:#fff;border-radius:20px;padding:2px 9px;white-space:nowrap;background:var(--tc)}
+.cu-t tfoot td{background:#f6faf7;font-weight:900}
+.cu-ed{display:none;gap:4px;white-space:nowrap}
+.cu-edit .cu-ed{display:inline-flex}
+.cu-ic{width:28px;height:28px;border-radius:8px;border:0;display:inline-grid;place-items:center;background:var(--mist);color:var(--ink-3);cursor:pointer;font-size:12.5px}
+.cu-ic:hover{background:var(--cc,#1f7a45);color:#fff}
+.cu-ic.del:hover{background:#9b1f45}
+.cu-add{display:none;margin:10px 12px 14px;border:2px dashed #d5e4da;border-radius:12px;padding:9px;text-align:center;color:var(--teal);font-weight:800;cursor:pointer;background:transparent}
+.cu-edit .cu-add{display:block}
+.cu-add:hover{background:#f3faf5}
+.cu-adminbar{display:none;align-items:center;gap:10px;background:#fff7e0;border:1px solid #f3dd9b;color:#7a5a00;border-radius:14px;padding:10px 14px;margin:0 0 16px;font-weight:700;font-size:14px}
+.cu-edit .cu-adminbar{display:flex;flex-wrap:wrap}
+.cu-box{background:#fff;border-radius:20px;box-shadow:var(--sh-1);padding:18px 20px;margin:0 0 18px}
+.cu-box h2{font-size:19px;font-weight:900;color:var(--ink);margin:0 0 12px;display:flex;align-items:center;gap:9px}
+.cu-box h2 i{color:var(--cc,#1f7a45)}
+.cu-plos{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.cu-plos li{display:flex;gap:10px;align-items:flex-start;line-height:1.8}
+.cu-plos li b{flex:0 0 auto;background:var(--mist);border-radius:8px;padding:0 8px;font-size:12px;color:var(--ink-3);font-family:ui-monospace,monospace}
+.cu-note{background:#f3f8ff;border:1px solid #d7e5fb;color:#1c3f93;border-radius:14px;padding:12px 14px;font-size:13.5px;line-height:1.9;margin:0 0 18px}
+.cu-draft{display:inline-flex;align-items:center;gap:6px;background:#fff1d6;color:#8a5a00;border-radius:20px;padding:4px 12px;font-size:12.5px;font-weight:800}
+/* شجرة المتطلبات */
+.cu-map{position:relative;overflow-x:auto;background:#fff;border-radius:20px;box-shadow:var(--sh-1);padding:16px}
+.cu-map-in{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(128px,1fr);gap:18px;min-width:max-content}
+.cu-map svg{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.cu-col h4{font-size:13px;font-weight:900;color:var(--muted);text-align:center;margin:0 0 10px}
+.cu-node{position:relative;z-index:1;display:block;max-width:190px;background:#fff;border:1.5px solid #dfe9e2;border-inline-start:5px solid var(--tc);border-radius:12px;padding:7px 10px;margin:0 0 9px;font-size:12.5px;line-height:1.5;color:var(--ink);text-decoration:none!important;transition:.15s}
+.cu-node b{display:block;font-family:ui-monospace,monospace;font-size:11.5px;color:var(--ink-3);direction:ltr;text-align:right}
+.cu-map.hl .cu-node{opacity:.25}
+.cu-map.hl .cu-node.on{opacity:1;box-shadow:0 0 0 3px color-mix(in srgb,var(--cc,#1f7a45) 30%,transparent)}
+.cu-map.hl .cu-node.me{opacity:1;background:var(--cc,#1f7a45);color:#fff}
+.cu-map.hl .cu-node.me b{color:#fff}
+.cu-map path{fill:none;stroke:#b9cdbf;stroke-width:1.6}
+.cu-map.hl path{opacity:.1}
+.cu-map.hl path.on{opacity:1;stroke:var(--cc,#1f7a45);stroke-width:2.4}
+/* البرامج */
+.cu-pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.cu-pcard{display:flex;flex-direction:column;gap:8px;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:var(--sh-1);border-top:5px solid var(--sc);text-decoration:none!important;color:var(--ink);transition:.25s}
+.cu-pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-lift,0 18px 30px -12px rgba(6,33,15,.25))}
+.cu-pcard h3{font-size:16.5px;font-weight:900;margin:0;line-height:1.5}
+.cu-pcard small{color:var(--muted);font-size:12.5px;direction:ltr;text-align:right}
+.cu-pcard .m{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.cu-pcard .m span{font-size:12px;font-weight:800;background:var(--mist);border-radius:20px;padding:3px 10px;color:var(--ink-3)}
+/* المقرر والكتب */
+.cu-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.cu-tabs button{border:0;border-radius:20px;padding:7px 14px;font-weight:800;font-size:13.5px;background:var(--mist);color:var(--ink-3);cursor:pointer}
+.cu-tabs button.on{background:var(--cc,#1f7a45);color:#fff}
+.cu-tabs em{font-style:normal;opacity:.7;font-size:12px}
+.cu-books{display:grid;gap:10px}
+.cu-book{display:flex;gap:14px;align-items:center;border:1px solid #e5eee8;border-radius:16px;padding:12px 14px;background:#fcfefd}
+.cu-book .ic{width:46px;height:56px;border-radius:8px;display:grid;place-items:center;background:#fbe9ee;color:#b3261e;font-size:22px;flex:0 0 46px}
+.cu-book .bd{flex:1;min-width:0}
+.cu-book .bd b{display:block;font-size:15px;color:var(--ink)}
+.cu-book .bd span{font-size:13px;color:var(--muted)}
+.cu-book .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
+.cu-book .tags em{font-style:normal;font-size:11.5px;font-weight:800;border-radius:20px;padding:2px 9px;background:var(--mist);color:var(--ink-3)}
+.cu-book .act{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.cu-soon{font-size:12.5px;color:var(--muted);font-weight:700}
+.cu-empty{text-align:center;color:var(--muted);padding:22px;border:2px dashed #e1ebe4;border-radius:16px}
+.cu-rel{display:flex;flex-wrap:wrap;gap:8px}
+.cu-rel a{display:inline-flex;gap:8px;align-items:center;background:var(--mist);border-radius:12px;padding:7px 12px;color:var(--ink-3);font-weight:700;text-decoration:none;font-size:13.5px}
+.cu-rel a b{font-family:ui-monospace,monospace;direction:ltr}
+.cu-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.cu-kv div{background:var(--mist);border-radius:14px;padding:10px 14px}
+.cu-kv small{display:block;color:var(--muted);font-size:12px}
+.cu-kv b{font-size:16px;color:var(--ink)}
+/* النوافذ */
+.cu-modal{position:fixed;inset:0;background:rgba(6,33,15,.55);display:none;align-items:flex-start;justify-content:center;z-index:9999;padding:40px 14px;overflow:auto}
+.cu-modal.on{display:flex}
+.cu-dlg{background:#fff;border-radius:20px;width:min(640px,100%);box-shadow:0 30px 60px rgba(0,0,0,.3);overflow:hidden}
+.cu-dlg header{display:flex;align-items:center;gap:10px;padding:14px 18px;background:var(--ink-2,#0b3119);color:#fff}
+.cu-dlg header b{font-size:16px}
+.cu-dlg header button{margin-inline-start:auto;border:0;background:rgba(255,255,255,.15);color:#fff;border-radius:10px;width:32px;height:32px;cursor:pointer}
+.cu-dlg form{padding:16px 18px;display:grid;gap:12px}
+.cu-dlg label{display:grid;gap:5px;font-size:13px;font-weight:800;color:var(--ink-3)}
+.cu-dlg input,.cu-dlg select,.cu-dlg textarea{border:1.5px solid #dbe6df;border-radius:11px;padding:9px 11px;font-size:14px;font-family:inherit;width:100%;background:#fff}
+.cu-dlg textarea{min-height:80px}
+.cu-dlg .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cu-dlg .act{display:flex;gap:8px;justify-content:flex-end;padding-top:4px}
+.cu-dlg .msg{font-size:13px;font-weight:800;color:#9b1f45;min-height:1em}
+.cu-toast{position:fixed;bottom:20px;inset-inline-start:20px;background:#0b3119;color:#fff;border-radius:14px;padding:11px 16px;font-weight:800;z-index:10000;box-shadow:0 10px 24px rgba(0,0,0,.25);display:none}
+@media(max-width:600px){.cu-t .tp,.cu-t th.tp{display:none}.cu-dlg .two{grid-template-columns:1fr}.cu-bar{position:static}}
+@media print{.cu-bar,.cu-adminbar,.cu-ed,.cu-add,header,footer,.u-page-hero video{display:none!important}.cu-lv{break-inside:avoid;box-shadow:none;border:1px solid #ccc}}

@@ -39,6 +39,7 @@ function uwciv_admin_nav()
         'import'       => ['المحتوى', 'fas fa-cloud-download-alt', 'استيراد محتوى بنيان', '/admin/import-biu.php', 0],
         'pages'        => ['صفحات المعلومات', 'fas fa-file-alt', 'كل الصفحات', '/admin/pages.php', 0],
         'colleges'     => ['الكليات', 'fas fa-university', 'كل الكليات', '/admin/college.php', 0],
+        'curriculum'   => ['الخدمات الأكاديمية', 'fas fa-project-diagram', 'الخطط الدراسية والكتب', '/admin/curriculum.php', 0],
         'library'      => ['الخدمات الأكاديمية', 'fas fa-book', 'المكتبة الرقمية', '/librarysystem/admin/index.php', 0],
         'grad'         => ['الخدمات الأكاديمية', 'fas fa-certificate', 'وثائق التخرج', '/pdf_grad/admin/index.php', 0],
         'exams'        => ['الخدمات الأكاديمية', 'fas fa-laptop-code', 'الامتحانات الإلكترونية', '/onlineexam/dash.php', 0],
